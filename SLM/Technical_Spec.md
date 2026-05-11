@@ -17,8 +17,6 @@ Standard Multi-Head Attention (MHA) is memory-bound during inference due to the 
 - **Config:** Using a ratio of 4:1 (4 Query heads for 1 Key/Value head).
 - **Learning:** This reduces the memory bandwidth requirement significantly while retaining nearly the same accuracy as MHA.
 
-[Image of Grouped Query Attention architecture]
-
 ### RMSNorm (Root Mean Square Layer Normalization)
 Replaced standard LayerNorm.
 - **Implementation:** Normalization is applied at the start of each block (Pre-Norm).
